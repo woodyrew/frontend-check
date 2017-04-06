@@ -4,12 +4,14 @@ Testing frontend capabilities
 ## Requirements
 - [git](https://git-scm.com/) - make sure your Privacy & Security settings allow to download applications from anywhere
 - [Node.js](https://github.com/creationix/nvm#install-script) &mdash; Stable: See [Release schedule](https://github.com/nodejs/LTS#lts_schedule)(version >= v6.9)
-    - `nvm install --lts=boron` will get the latest v6 (LTS Boron) version
+    - `nvm install lts/boron` will get the latest v6 (LTS Boron) version
     - Test with `node --version`
-    - _Remember:_ `nvm use v6` at the start of your session
+    - _Remember:_ Run `nvm use` at the start of your session.
 - [libsass](http://sass-lang.com/libsass) - Might not be necessary.
-- A Markdown text editor (https://atom.io/ or https://www.sublimetext.com/ for example)
-- [EditorConfig plugin](http://editorconfig.org/#download).
+- A decent code editor (https://atom.io/ or https://www.sublimetext.com/ for example) with ideally the following:
+  - [EditorConfig plugin](http://editorconfig.org/#download).
+  - [ESLint](https://atom.io/packages/linter-eslint)
+  - [Sass-Lint](https://atom.io/packages/linter-sass-lint)
 
 To install on mac:
 - install homebrew (http://brew.sh/)
