@@ -43,13 +43,11 @@
 
 @import 'util/util';
 
-$nuxeo-font-family: 'Open Sans', Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-
 // 1. Global
 // ---------
 
 // $global-font-size: 100%;
-$global-width: rem-calc(960);
+// $global-width: rem-calc(1200);
 // $global-lineheight: 1.5;
 $foundation-palette: (
   primary: #1779ba,
@@ -65,15 +63,15 @@ $foundation-palette: (
 // $white: #fefefe;
 // $body-background: $white;
 // $body-font-color: $black;
-$body-font-family:  $nuxeo-font-family;
+// $body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 // $body-antialiased: true;
 // $global-margin: 1rem;
 // $global-padding: 1rem;
 // $global-weight-normal: normal;
-$global-weight-bold: 600;
+// $global-weight-bold: bold;
 // $global-radius: 0;
 // $global-text-direction: ltr;
-$global-flexbox: true;
+// $global-flexbox: false;
 // $print-transparent-backgrounds: true;
 
 @include add-foundation-colors;
@@ -113,25 +111,24 @@ $global-flexbox: true;
 // $header-color: inherit;
 // $header-lineheight: 1.4;
 // $header-margin-bottom: 0.5rem;
-$header-styles: (
-  small: (
-    'h1': ('font-size': 24),
-    'h2': ('font-size': 20),
-    'h3': ('font-size': 19),
-    'h4': ('font-size': 18),
-    'h5': ('font-size': 17),
-    'h6': ('font-size': 16),
-  ),
-  medium: (
-    'h1': ('font-size': 48),
-    'h2': ('font-size': 40),
-    'h3': ('font-size': 31),
-    'h4': ('font-size': 25),
-    'h5': ('font-size': 20),
-    'h6': ('font-size': 16),
-  ),
-);
-// $header-styles: build_from_header-sizes($header-sizes);
+// $header-styles: (
+//   small: (
+//     'h1': ('font-size': 24),
+//     'h2': ('font-size': 20),
+//     'h3': ('font-size': 19),
+//     'h4': ('font-size': 18),
+//     'h5': ('font-size': 17),
+//     'h6': ('font-size': 16),
+//   ),
+//   medium: (
+//     'h1': ('font-size': 48),
+//     'h2': ('font-size': 40),
+//     'h3': ('font-size': 31),
+//     'h4': ('font-size': 25),
+//     'h5': ('font-size': 20),
+//     'h6': ('font-size': 16),
+//   ),
+// );
 // $header-text-rendering: optimizeLegibility;
 // $small-font-size: 80%;
 // $header-small-font-color: $medium-gray;
@@ -234,7 +231,7 @@ $header-styles: (
 // $breadcrumbs-margin: 0 0 $global-margin 0;
 // $breadcrumbs-item-font-size: rem-calc(11);
 // $breadcrumbs-item-color: $primary-color;
-$breadcrumbs-item-color-current: #fff;
+// $breadcrumbs-item-color-current: $black;
 // $breadcrumbs-item-color-disabled: $medium-gray;
 // $breadcrumbs-item-margin: 0.75rem;
 // $breadcrumbs-item-uppercase: true;
@@ -246,19 +243,18 @@ $breadcrumbs-item-color-current: #fff;
 // $button-padding: 0.85em 1em;
 // $button-margin: 0 0 $global-margin 0;
 // $button-fill: solid;
-$button-background: #01579b;
+// $button-background: $primary-color;
 // $button-background-hover: scale-color($button-background, $lightness: -15%);
 // $button-color: $white;
 // $button-color-alt: $black;
 // $button-radius: $global-radius;
-$button-sizes: (
-  tiny: .7rem,
-  small: .85rem,
-  default: 1rem,
-  large: 1.25rem
-);
-$button-palette: (
-) !default;
+// $button-sizes: (
+//   tiny: 0.6rem,
+//   small: 0.75rem,
+//   default: 0.9rem,
+//   large: 1.25rem,
+// );
+// $button-palette: $foundation-palette;
 // $button-opacity-disabled: 0.25;
 // $button-background-hover-lightness: -20%;
 // $button-hollow-hover-lightness: -50%;
@@ -336,17 +332,16 @@ $button-palette: (
 // $dropdown-font-size: 1rem;
 // $dropdown-width: 300px;
 // $dropdown-radius: $global-radius;
-$dropdown-sizes: (
-  tiny: 100px,
-  small: 200px,
-  large: 400px,
-  mega: 100%
-);
+// $dropdown-sizes: (
+//   tiny: 100px,
+//   small: 200px,
+//   large: 400px,
+// );
 
 // 18. Dropdown Menu
 // -----------------
 
-$dropdownmenu-arrows: false;
+// $dropdownmenu-arrows: true;
 // $dropdownmenu-arrow-color: $anchor-color;
 // $dropdownmenu-arrow-size: 6px;
 // $dropdownmenu-min-width: 200px;
@@ -584,7 +579,7 @@ $dropdownmenu-arrows: false;
 // -------------
 
 // $thumbnail-border: solid 4px $white;
-$thumbnail-margin-bottom: 0;
+// $thumbnail-margin-bottom: $global-margin;
 // $thumbnail-shadow: 0 0 0 1px rgba($black, 0.2);
 // $thumbnail-shadow-hover: 0 0 6px 1px rgba($primary-color, 0.5);
 // $thumbnail-transition: box-shadow 200ms ease-out;
@@ -593,11 +588,11 @@ $thumbnail-margin-bottom: 0;
 // 35. Title Bar
 // -------------
 
-$titlebar-background: #fff;
+// $titlebar-background: $black;
 // $titlebar-color: $white;
 // $titlebar-padding: 0.5rem;
 // $titlebar-text-font-weight: bold;
-$titlebar-icon-color: #0a0a0a;
+// $titlebar-icon-color: $white;
 // $titlebar-icon-color-hover: $medium-gray;
 // $titlebar-icon-spacing: 0.25rem;
 
@@ -617,37 +612,9 @@ $titlebar-icon-color: #0a0a0a;
 // 37. Top Bar
 // -----------
 
-$topbar-padding: 0;
-$topbar-background: #fff;
+// $topbar-padding: 0.5rem;
+// $topbar-background: $light-gray;
 // $topbar-submenu-background: $topbar-background;
 // $topbar-title-spacing: 0.5rem 1rem 0.5rem 0;
 // $topbar-input-width: 200px;
 // $topbar-unstack-breakpoint: medium;
-
-$nuxeo-color-accent-hover: #c31900;
-$nuxeo-color-accent: #ff452a;
-$nuxeo-color-light-blue: #9ec2d5;
-$nuxeo-color-turquoise-blue: #2199e8;
-$nuxeo-color-blue: #1585cf;
-$nuxeo-color-dark-blue: #173d7d;
-$nuxeo-color-dark-gray: #0a0a0a;
-$nuxeo-color-gray: #333;
-$nuxeo-color-light-gray: #ccc;
-$nuxeo-color-lighter-gray: #eee;
-$nuxeo-color-light: #fff;
-
-$nuxeo-body-largest: 1.6rem;
-$nuxeo-body-larger: 1.5rem;
-$nuxeo-body-large: 1.3rem;
-$nuxeo-body-regular: 1rem;
-$nuxeo-body-small: .85rem;
-$nuxeo-body-smaller: .7rem;
-
-$nuxeo-button-regular: .9rem;
-
-$nuxeo-space-larger: 4rem;
-$nuxeo-space-large: 3rem;
-$nuxeo-space: 2rem;
-$nuxeo-space-small: 1rem;
-$nuxeo-space-smaller: .5rem;
-$nuxeo-space-tiny: .3rem;
