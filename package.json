@@ -48,7 +48,7 @@
   },
   "main": "build.js",
   "config": {
-    "browser": "chrome"
+    "browser": "firefox"
   },
   "scripts": {
     "pretest": "npm run yaml_lint config.yml",
