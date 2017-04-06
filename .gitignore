@@ -35,3 +35,24 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
+
+# Conflicts
+*.orig
+
+# Built components
+site/
+client/css/
+assets/js/
+assets/fonts/fontawesome*
+assets/fonts/FontAwesome*
+assets/fonts/pictonic*
+assets/fonts/Bold/
+assets/fonts/BoldItalic/
+assets/fonts/ExtraBold/
+assets/fonts/ExtraBoldItalic/
+assets/fonts/Italic/
+assets/fonts/Light/
+assets/fonts/LightItalic/
+assets/fonts/Regular/
+assets/fonts/Semibold/
+assets/fonts/SemiboldItalic/

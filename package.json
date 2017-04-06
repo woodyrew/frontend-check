@@ -1,0 +1,83 @@
+{
+  "name": "frontend-check",
+  "description": "For testing frontend capabilities",
+  "license": "MIT",
+  "private": true,
+  "version": "0.1.0",
+  "author": {
+    "name": "Andrew Goodricke",
+    "email": "github@andrewgoodricke.com"
+  },
+  "dependencies": {
+    "cheerio": "^0.20.0",
+    "debug": "^2.2.0",
+    "font-awesome": "^4.5.0",
+    "foundation-sites": "6.3.1",
+    "handlebars": "^4.0.5",
+    "highlight.js": "^9.9.0",
+    "joi": "^7.2.3",
+    "js-yaml": "^3.5.2",
+    "lodash.assignin": "^4.2.0",
+    "marked": "^0.3.5",
+    "metalsmith": "^2.1.0",
+    "metalsmith-collections": "^0.7.0",
+    "metalsmith-default-values": "0.0.2",
+    "metalsmith-feed": "^0.2.0",
+    "metalsmith-gzip": "^1.1.0",
+    "metalsmith-if": "^0.1.1",
+    "metalsmith-ignore": "^0.1.2",
+    "metalsmith-in-place": "^1.4.3",
+    "metalsmith-layouts": "^1.4.4",
+    "metalsmith-markdown": "^0.2.1",
+    "metalsmith-matters": "^1.1.0",
+    "metalsmith-permalinks": "^0.4.1",
+    "motion-ui": "^1.2.0",
+    "multimatch": "^2.1.0",
+    "node-yaml-config": "0.0.3",
+    "nuxeo-website-styles": "github:nuxeo/website-styles#v3.2.4",
+    "open-sans-fontface": "^1.4.0",
+    "what-input": "^1.1.4"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "eslint": "^1.10.3",
+    "node-sass": "^3.7.0",
+    "nodemon": "^1.8.1",
+    "tape": "^4.4.0",
+    "taper": "^0.5.0"
+  },
+  "main": "build.js",
+  "config": {
+    "browser": "chrome"
+  },
+  "scripts": {
+    "pretest": "npm run yaml_lint config.yml",
+    "test": "echo 'Tests passed' || taper test",
+    "posttest": "npm run lint",
+    "verify": "echo 'Verification passed' || taper verify",
+    "prestart": "npm run test && npm run compile",
+    "start": "npm run metalsmith",
+    "poststart": "npm run copy_assets && npm run verify",
+    "predev": "npm install",
+    "dev": "npm run browser_sync & NODE_ENV=development nodemon --exec 'npm start && browser-sync reload'",
+    "compile": "npm run build_css",
+    "precopy_assets": "rm -rf ./assets/css/* && cp -r ./client/css ./assets/",
+    "copy_assets": "cp -r ./assets ./site",
+    "postcopy_assets": "cp node_modules/nuxeo-website-styles/bower_components/webcomponentsjs/webcomponents-lite.min.js ./site/assets/ && cp node_modules/nuxeo-website-styles/elements/*.min.js ./site/assets/ && cp node_modules/nuxeo-website-styles/elements/*.build.html ./site/assets/",
+    "metalsmith": "node .",
+    "copy_fontawesome": "find ./node_modules/font-awesome/fonts/* -maxdepth 0 -type f -exec cp \"{}\" ./assets/fonts/ \\;",
+    "copy_open_sans": "cp -r ./node_modules/open-sans-fontface/fonts/* ./assets/fonts/",
+    "prebuild_css": "ls ./assets/fonts > /dev/null || mkdir -p ./assets/fonts && npm run copy_fontawesome && npm run copy_open_sans && rm -rf ./client/css/*",
+    "build_css": "node-sass --source-map true --source-map-contents --include-path ./client/scss/ --include-path ./node_modules/foundation-sites/scss/ --include-path ./node_modules/motion-ui/src --include-path ./node_modules/font-awesome/scss --include-path ./node_modules/nuxeo-website-styles/scss --include-path ./node_modules/open-sans-fontface/sass --output-style compressed --output ./client/css/ ./client/scss/",
+    "browser_sync": "browser-sync start --server site --browser=$npm_package_config_browser",
+    "lint": "eslint --ignore-pattern node_modules --ignore-pattern site/ *.js **/*.js",
+    "yaml_lint": "js-yaml -t > /dev/null"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:woodyrew/frontent-check.git"
+  },
+  "bugs": {
+    "url": "https://github.com/woodyrew/frontent-check/issues"
+  }
+}

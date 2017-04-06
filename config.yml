@@ -1,0 +1,21 @@
+default:
+  site:
+    # Standard Site Configuration
+    url: http://www.my-site.com
+    name: My Site
+  markdown_options:
+    langPrefix : ''
+    gfm    : true
+    breaks   : true
+    tables   : true
+    pedantic   : false
+    smartypants: false
+    sanitize   : false
+  page_defaults:
+    -
+      pattern: "**/*.{md,html}"
+      defaults:
+        meta:
+          robots: noindex, nofollow
+development:
+  isDev: true

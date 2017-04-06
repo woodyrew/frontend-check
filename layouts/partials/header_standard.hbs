@@ -1,0 +1,36 @@
+<!doctype html>
+<html class="no-js" lang="{{lang}}">
+<head>
+  {{! Standard Nuxeo footer }}
+  <script src="/assets/webcomponents-lite.min.js"></script>
+  <link rel="import" href="/assets/elements.build.html" />
+
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Site</title>
+  <meta name="description" content="{{description}}" />
+
+  {{> meta_tags}}
+
+  <link rel="stylesheet" href="/assets/css/main.css" />
+  {{#if style}}
+  <link rel="stylesheet" href="/assets/css/{{style}}.css">
+  {{/if}}
+
+  {{!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+  //- Safely remove this block if you are not targeting IE8 --}}
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" />
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" />
+  <![endif]-->
+
+</head>
+<body>
+  <nuxeo-header show-nuxeo-menu>
+    <nuxeo-banner background-id="1" title="New Title">Lorem ipsum dolor sit amet, cu facer noster mea. Doming iracundia voluptatum in his. Vel an impetus democritum. Te quo sapientem iracundia. Ubique nostrud dolorum ut est.
+    </nuxeo-banner>
+    <nuxeo-menu site-name="Special Site" site-url="/" menu-items='[{"title": "About", "url": "/about"}, {"title": "Contact", "url": "/contact"}]'>
+    </nuxeo-menu>
+  </nuxeo-header>
+  <div id="main-content">
