@@ -9,13 +9,13 @@ renderer.image = function (href, title, text) {
   ];
   attrs.push(`src="${href}"`);
   if (title === 'right') {
-    attrs.push('class="float-right nuxeo-pad-left"');
+    attrs.push('class="float-right nuxeo-space-left-small"');
   }
   else if (title === 'center') {
     attrs.push('class="text-center"');
   }
   else {
-    attrs.push('class="float-left nuxeo-pad-right"');
+    attrs.push('class="float-left nuxeo-space-right-small"');
     if (title) {
       attrs.push(`title="${title}"`);
     }
