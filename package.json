@@ -34,8 +34,7 @@
     "motion-ui": "^1.2.0",
     "multimatch": "^2.1.0",
     "node-yaml-config": "0.0.3",
-    "nuxeo-website-styles": "github:nuxeo/website-styles#v3.2.4",
-    "open-sans-fontface": "^1.4.0",
+    "nuxeo-website-styles": "github:nuxeo/website-styles#v3.2.5",
     "what-input": "^1.1.4"
   },
   "devDependencies": {
@@ -66,9 +65,8 @@
     "postcopy_assets": "cp node_modules/nuxeo-website-styles/bower_components/webcomponentsjs/webcomponents-lite.min.js ./site/assets/ && cp node_modules/nuxeo-website-styles/elements/*.min.js ./site/assets/ && cp node_modules/nuxeo-website-styles/elements/*.build.html ./site/assets/",
     "metalsmith": "node .",
     "copy_fontawesome": "find ./node_modules/font-awesome/fonts/* -maxdepth 0 -type f -exec cp \"{}\" ./assets/fonts/ \\;",
-    "copy_open_sans": "cp -r ./node_modules/open-sans-fontface/fonts/* ./assets/fonts/",
-    "prebuild_css": "ls ./assets/fonts > /dev/null || mkdir -p ./assets/fonts && npm run copy_fontawesome && npm run copy_open_sans && rm -rf ./client/css/*",
-    "build_css": "node-sass --source-map true --source-map-contents --include-path ./client/scss/ --include-path ./node_modules/foundation-sites/scss/ --include-path ./node_modules/motion-ui/src --include-path ./node_modules/font-awesome/scss --include-path ./node_modules/nuxeo-website-styles/scss --include-path ./node_modules/open-sans-fontface/sass --output-style compressed --output ./client/css/ ./client/scss/",
+    "prebuild_css": "ls ./assets/fonts > /dev/null || mkdir -p ./assets/fonts && npm run copy_fontawesome && rm -rf ./client/css/*",
+    "build_css": "node-sass --source-map true --source-map-contents --include-path ./client/scss/ --include-path ./node_modules/foundation-sites/scss/ --include-path ./node_modules/motion-ui/src --include-path ./node_modules/font-awesome/scss --include-path ./node_modules/nuxeo-website-styles/scss --output-style compressed --output ./client/css/ ./client/scss/",
     "browser_sync": "browser-sync start --server site --browser=$npm_package_config_browser",
     "lint": "eslint --ignore-pattern node_modules --ignore-pattern site/ *.js **/*.js",
     "yaml_lint": "js-yaml -t > /dev/null"
