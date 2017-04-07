@@ -3,6 +3,16 @@ default:
     # Standard Site Configuration
     url: http://www.my-site.com
     name: My Site
+    lorem1: >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare eget est quis aliquam. Phasellus orci augue, fermentum consectetur orci ultrices, pulvinar sollicitudin risus. Quisque vitae velit ac nibh mattis accumsan vitae et augue. Curabitur a sodales augue. Nullam egestas massa sed dolor vestibulum fermentum. Quisque lacinia quis nulla at vehicula. Praesent rutrum molestie eros eu molestie. In ac placerat nulla. Nullam vestibulum nisl ac ligula maximus, ut aliquet nulla rutrum. Vestibulum venenatis fringilla dui viverra fermentum. Sed lobortis felis tellus, ut aliquam arcu consequat sed. Duis enim ipsum, feugiat vitae eleifend eget, auctor eu enim. Mauris volutpat egestas nisl ut rhoncus. Fusce non libero rutrum, aliquet ex quis, tempus lacus. Nam eu scelerisque erat. Vivamus pulvinar enim non arcu porta, in ultricies odio facilisis.
+    lorem2: >
+      Nam in elementum nulla, sed blandit nulla. Nulla sed tempus orci, et vestibulum felis. Donec volutpat lorem id neque gravida cursus. Sed vel felis arcu. Maecenas sagittis mauris rutrum luctus vulputate. Proin commodo suscipit purus eget sollicitudin. Integer pellentesque placerat lacinia. Nunc convallis elit id augue porttitor tempus. Nullam luctus diam et lectus consequat, ut efficitur nisl ultricies. Morbi sed enim sollicitudin, tempor lectus et, dapibus mauris. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec nulla lorem, lobortis sed aliquam vitae, consequat a sapien.
+    lorem3: >
+      Mauris eget mattis tellus. Ut ac nunc elit. Pellentesque eleifend venenatis diam congue lobortis. Vivamus id lectus dictum, imperdiet nibh eget, rutrum erat. Nam et erat viverra, elementum lacus non, aliquet nunc. Nam egestas purus quis tristique ultrices. Pellentesque tincidunt nec tellus sed feugiat. Suspendisse quam sapien, pulvinar vel pretium ut, condimentum sed odio. Sed facilisis blandit mauris eget pulvinar.
+    lorem4: >
+      Etiam vitae nibh eleifend, consequat augue ut, tincidunt risus. Mauris eget lectus nisl. Donec convallis varius justo id lacinia. Quisque sed dolor est. Sed in nibh at diam ornare rutrum. Duis at est non est ornare semper. Fusce non felis volutpat velit pellentesque dapibus. Fusce nec purus id quam vulputate facilisis.
+    lorem5: >
+      Sed at leo tortor. Vestibulum varius semper orci, a commodo ipsum. Nam scelerisque facilisis ligula, eget tempor eros auctor eu. Nunc dapibus ligula eu rhoncus vestibulum. Vivamus ultricies ligula sed nisl lacinia volutpat. Pellentesque odio dui, finibus eget aliquam et, congue vitae nibh. Ut id laoreet mauris. Aliquam condimentum ultrices neque id pretium. Integer pulvinar diam id augue convallis, id dictum mauris venenatis. Etiam a dui dictum, vehicula purus a, dictum justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam tempus pellentesque molestie.
   markdown_options:
     langPrefix : ''
     gfm    : true
