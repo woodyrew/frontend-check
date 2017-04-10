@@ -1,8 +1,12 @@
 .box {
-  background-color: #e6e6e6;
-  border: 1px solid #767676;
-  height: 300px;
-  margin: 30px auto;
-  padding: $nuxeo-space;
-  width: 300px;
+  border: 1px solid rgba(#000, .05);
+  color: $body-font-color;
+  display: block;
+  height: 100%;
+  padding: $margin;
+
+  p {
+    font-size: 150%;
+    max-height: 185px;
+  }
 }

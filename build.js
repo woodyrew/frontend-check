@@ -39,7 +39,7 @@ const config = yaml_config.load(path.join(__dirname, '/config.yml'));
 
 const handlebars_helpers = {
   head_title: require('./modules/handlebars/head_title'),
-  md        : require('./modules/handlebars/markdown')
+  truncate  : require('./modules/handlebars/truncate')
 };
 
 debug('Config: %o', config);

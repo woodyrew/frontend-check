@@ -1,0 +1,45 @@
+@import 'settings';
+
+.main-content {
+  h1 {
+    font-weight: 600;
+  }
+
+  li {
+    margin-bottom: $margin-x-small;
+  }
+
+  .bg-blue {
+    background-color: #eff5f8;
+  }
+
+  .fg-primary {
+    color: $primary-color !important;
+  }
+
+  %heading-small-template {
+    color: rgba(#000522, .5);
+    font-size: 75%;
+    letter-spacing: .085rem;
+    text-transform: uppercase;
+  }
+
+  .heading-small {
+    @extend %heading-small-template;
+  }
+
+  .subheading-small {
+    @extend %heading-small-template;
+  }
+
+  .lead {
+    padding: $margin-large;
+
+    > div {
+      &:first-child {
+        font-size: 200%;
+        font-weight: 600;
+      }
+    }
+  }
+}

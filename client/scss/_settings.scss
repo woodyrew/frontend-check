@@ -47,10 +47,10 @@
 // ---------
 
 // $global-font-size: 100%;
-// $global-width: rem-calc(1200);
+$global-width: rem-calc(960);
 // $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: #1779ba,
+  primary: #01579b,
   secondary: #767676,
   success: #3adb76,
   warning: #ffae00,
@@ -111,24 +111,24 @@ $body-font-family: 'Open Sans', Roboto, 'Helvetica Neue', Helvetica, Arial, sans
 // $header-color: inherit;
 // $header-lineheight: 1.4;
 // $header-margin-bottom: 0.5rem;
-// $header-styles: (
-//   small: (
-//     'h1': ('font-size': 24),
-//     'h2': ('font-size': 20),
-//     'h3': ('font-size': 19),
-//     'h4': ('font-size': 18),
-//     'h5': ('font-size': 17),
-//     'h6': ('font-size': 16),
-//   ),
-//   medium: (
-//     'h1': ('font-size': 48),
-//     'h2': ('font-size': 40),
-//     'h3': ('font-size': 31),
-//     'h4': ('font-size': 25),
-//     'h5': ('font-size': 20),
-//     'h6': ('font-size': 16),
-//   ),
-// );
+$header-styles: (
+  small: (
+    'h1': ('font-size': 24),
+    'h2': ('font-size': 20),
+    'h3': ('font-size': 19),
+    'h4': ('font-size': 18),
+    'h5': ('font-size': 17),
+    'h6': ('font-size': 16),
+  ),
+  medium: (
+    'h1': ('font-size': 48),
+    'h2': ('font-size': 40),
+    'h3': ('font-size': 28),
+    'h4': ('font-size': 25),
+    'h5': ('font-size': 20),
+    'h6': ('font-size': 16),
+  ),
+);
 // $header-text-rendering: optimizeLegibility;
 // $small-font-size: 80%;
 // $header-small-font-color: $medium-gray;
@@ -619,8 +619,8 @@ $body-font-family: 'Open Sans', Roboto, 'Helvetica Neue', Helvetica, Arial, sans
 // $topbar-input-width: 200px;
 // $topbar-unstack-breakpoint: medium;
 
-$nuxeo-space-x-large: 4rem;
-$nuxeo-space-large: 3rem;
-$nuxeo-space: 2rem;
-$nuxeo-space-small: 1rem;
-$nuxeo-space-x-small: .5rem;
+$margin-x-large: 6rem;
+$margin-large: 3rem;
+$margin: 2rem;
+$margin-small: 1rem;
+$margin-x-small: .5rem;

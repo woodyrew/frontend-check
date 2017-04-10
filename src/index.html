@@ -8,7 +8,113 @@ description: This is my site
 
 ---
 {{> header_standard}}
+<div class="main-content">
 
-<div class="box"><p>This is the content of the page.</p></div>
+  <div class="row margin-top">
+    <div class="column">
+      <h1 class="text-center">Lorem ipsum dolor sit amet</h1>
 
+      <ul class="row medium-up-3 align-center no-bullet margin-top">
+        <li class="column item-icon">Lorem ipsum dolor sit amet</li>
+        <li class="column item-icon">Lorem ipsum dolor sit amet</li>
+        <li class="column item-icon">Lorem ipsum dolor sit amet</li>
+        <li class="column item-icon">Lorem ipsum dolor sit amet</li>
+        <li class="column item-icon">Lorem ipsum dolor sit amet</li>
+      </ul>
+
+      <div class="lead text-center">
+        <div>Consectetur adipiscing elit</div>
+        <p>
+          {{truncate site.lorem1 71}}
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-blue">
+    <div class="row">
+      <div class="column">
+        <h2>Lorem ipsum</h2>
+
+        <div>
+          <div>
+            <img src="/assets/imgs/1.jpeg" />
+          </div>
+          <div>
+            <h3>Dolor sit amet</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac porta elit, vitae convallis ipsum.
+            </p>
+          </div>
+        </div>
+
+        <div class="margin-top-large">
+          <div>
+            <h3>Consectetur</h3>
+            <p>
+              Phasellus mollis aliquet leo vel sagittis. Cras a feugiat tortor. Nam maximus vulputate ex ac lobortis.
+            </p>
+          </div>
+          <div>
+            <img src="/assets/imgs/2.jpeg" />
+          </div>
+        </div>
+
+        <div class="margin-top-large margin-bottom-x-large">
+          <div>
+            <img src="/assets/imgs/3.jpg" />
+          </div>
+          <div>
+            <h3>Adipiscing elit</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac porta elit, vitae convallis ipsum. Phasellus mollis aliquet leo vel sagittis. Cras a feugiat tortor. Nam maximus vulputate ex ac lobortis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row medium-up-3 margin-top-x-large margin-bottom-x-large">
+    <div class="column">
+      <a href="#" class="box">
+        <div class="heading-small fg-primary">
+          Recommended blog article
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac porta elit, vitae convallis ipsum.
+        </p>
+        <div class="subheading-small">
+          December 8, 2016 • Lorem ipsum
+        </div>
+      </a>
+    </div>
+    <div class="column">
+      <a href="#" class="box">
+        <div class="heading-small">
+          Lorem, ipsum dolor
+        </div>
+        <p>
+          Cras ac porta elit, vitae convallis ipsum
+        </p>
+        <div class="subheading-small">
+          December 8, 2016 • Lorem ipsum
+        </div>
+      </a>
+    </div>
+    <div class="column">
+      <div class="heading-small fg-primary margin-top">
+        Popular posts
+      </div>
+      <ul class="no-bullet">
+        <li>Lorem ipsum dolor sit amet</li>
+        <li>Cras ac porta elit, vitae convallis ipsum</li>
+        <li>Phasellus mollis aliquet leo vel sagittis</li>
+        <li>Cras a feugiat tortor</li>
+        <li>Nam maximus vulputate ex ac lobortis</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
 {{> footer_standard}}
