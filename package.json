@@ -34,7 +34,7 @@
     "motion-ui": "^1.2.0",
     "multimatch": "^2.1.0",
     "node-yaml-config": "0.0.3",
-    "nuxeo-website-styles": "github:nuxeo/website-styles#v3.2.5",
+    "nuxeo-website-styles": "github:nuxeo/website-styles#v3.2.6",
     "what-input": "^1.1.4"
   },
   "devDependencies": {
@@ -59,6 +59,7 @@
     "poststart": "npm run copy_assets && npm run verify",
     "predev": "npm install",
     "dev": "npm run browser_sync & NODE_ENV=development nodemon --exec 'npm start && browser-sync reload'",
+    "debug": "DEBUG=nuxeo\\-*,*:error npm run dev",
     "compile": "npm run build_css",
     "precopy_assets": "rm -rf ./assets/css/* && cp -r ./client/css ./assets/",
     "copy_assets": "cp -r ./assets ./site",

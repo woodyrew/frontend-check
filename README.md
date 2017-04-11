@@ -1,24 +1,36 @@
 # frontend-check
 Testing frontend capabilities
 
+## Docker image
+- Go to [Installation](#Installation)
+- Download and install Docker (https://www.docker.com/community-edition)
+- run script `./docker_run.sh` &mdash; it will build the image and run the application
+- Open your browser to http://localhost:3000
+- For debugging nuxeo specific modules and error messages you may pass `debug` as a parameter
+```bash
+./docker_run.sh debug
+```
+
+**Or**
+
 ## Requirements
-- [git](https://git-scm.com/) - make sure your Privacy & Security settings allow to download applications from anywhere
+- [git](https://git-scm.com/) &mdash; make sure your Privacy & Security settings allow to download applications from anywhere
 - [Node.js](https://github.com/creationix/nvm#install-script) &mdash; Stable: See [Release schedule](https://github.com/nodejs/LTS#lts_schedule)(version >= v6.9)
     - `nvm install lts/boron` will get the latest v6 (LTS Boron) version
     - Test with `node --version`
     - _Remember:_ Run `nvm use` at the start of your session.
-- [libsass](http://sass-lang.com/libsass) - Might not be necessary.
+- [libsass](http://sass-lang.com/libsass) &mdash; Might not be necessary.
 - A decent code editor (https://atom.io/ or https://www.sublimetext.com/ for example) with ideally the following:
   - [EditorConfig plugin](http://editorconfig.org/#download).
   - [ESLint](https://atom.io/packages/linter-eslint)
   - [Sass-Lint](https://atom.io/packages/linter-sass-lint)
 
-To install on mac:
+**To install on mac:**
 - install homebrew (http://brew.sh/)
 - run ```brew update```
 - use brew to install (or use upgrade if you have already some installed):
 ```bash
-brew install git libsass
+brew install git nodejs libsass
 ```
 
 ## Installation
@@ -44,12 +56,14 @@ npm config set Nuxeo-website:browser chromium-browser
 ```
 
 ### Debugging
-Metalsmith and most of its plugins use [debug](https://github.com/visionmedia/debug). by default it displays any errors that have occurred during the build but you can debug a specific plugin if required.
+Metalsmith and most of its plugins use [debug](https://github.com/visionmedia/debug). By default it displays any errors that have occurred during the build but you can debug a specific plugin if required.
 
-The following displays error messages.
+The following displays debug messages from nuxeo specific modules and error messages (see `modules/handlebars/truncates.js` for logging example).
 ```bash
-DEBUG=*:error npm run dev
+DEBUG=nuxeo\-*,*:error npm run dev
 ```
+
+You can also run `npm run debug`.
 
 ## Project Structure
 ### `assets`
