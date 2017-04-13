@@ -79,7 +79,7 @@ Client side styles (SCSS).
 Templates and partials.
 
 ### `modules`
-Nuxeo specific modules.
+Nuxeo specific modules. e.g. Handlebars helpers.
 
 ### `site`
 Generated output of the site. This is what will be served in production.
