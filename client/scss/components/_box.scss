@@ -4,9 +4,10 @@
   display: block;
   height: 100%;
   padding: $margin;
+  position: relative;
+  box-shadow: 10px 10px 5px grey;
 
   p {
     font-size: 150%;
-    max-height: 185px;
   }
 }
