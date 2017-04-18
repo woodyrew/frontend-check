@@ -32,7 +32,7 @@ const markdown       = require('metalsmith-markdown');
 const permalinks     = require('metalsmith-permalinks');
 
 // local packages
-const renderer                     = require('./modules/markdown_renderer');
+const renderer = require('./modules/markdown_renderer');
 
 // get config
 const config = yaml_config.load(path.join(__dirname, '/config.yml'));
