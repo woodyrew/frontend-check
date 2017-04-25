@@ -2,7 +2,7 @@
 Testing frontend capabilities
 
 ## Docker image
-- Go to [Installation](#Installation)
+- Go to [Installation](#installation) to clone the repository
 - Download and install Docker (https://www.docker.com/community-edition)
 - run script `./docker_run.sh` &mdash; it will build the image and run the application
 - Open your browser to http://localhost:3000
