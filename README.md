@@ -2,7 +2,12 @@
 Testing frontend capabilities
 
 ## Docker image
-- Go to [Installation](#installation) to clone the repository
+Clone the repository to your local machine, using your favorite Git client or the command line:
+```bash
+git clone https://github.com/woodyrew/frontend-check
+cd frontend-check
+```
+
 - Download and install Docker (https://www.docker.com/community-edition)
 - run script `./docker_run.sh` &mdash; it will build the image and run the application
 - Open your browser to http://localhost:3000
