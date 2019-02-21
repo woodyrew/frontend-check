@@ -14,7 +14,7 @@ cd frontend-check
 - Download and install Docker (https://www.docker.com/community-edition)
 - run script `./docker_run.sh` &mdash; it will build the image and run the application
 - Open your browser to http://localhost:3000
-- For debugging nuxeo specific modules and error messages you may pass `debug` as a parameter
+- For debugging Nuxeo specific modules and error messages you may pass `debug` as a parameter
 
 ```bash
 ./docker_run.sh debug
@@ -66,7 +66,7 @@ If not just browse to that location with your favourite browser.
 
 ### Change browser
 
-The broswer defaults to `firefox` but can be changed with the following command and then locally as usual.
+The browser defaults to `firefox` but can be changed with the following command and then locally as usual.
 
 ```bash
 npm config set Nuxeo-website:browser chromium-browser
@@ -76,7 +76,7 @@ npm config set Nuxeo-website:browser chromium-browser
 
 Metalsmith and most of its plugins use [debug](https://github.com/visionmedia/debug). By default it displays any errors that have occurred during the build but you can debug a specific plugin if required.
 
-The following displays debug messages from nuxeo specific modules and error messages (see `modules/handlebars/truncates.js` for logging example).
+The following displays debug messages from Nuxeo specific modules and error messages (see `modules/handlebars/truncates.js` for logging example).
 
 ```bash
 DEBUG=nuxeo\-*,*:error npm run dev
@@ -137,10 +137,9 @@ Define a page specific style sheet. Defined in `client/scss/`. e.g. To use `clie
 
 ```md
 ---
+---
 
----
-style: home
----
+## style: home
 
 Page content here.
 ```
