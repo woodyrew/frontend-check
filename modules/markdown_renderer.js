@@ -3,18 +3,14 @@
 
 const marked = require('marked');
 const renderer = new marked.Renderer();
-renderer.image = function (href, title, text) {
-  const attrs = [
-    `alt="${text}"`
-  ];
+renderer.image = function(href, title, text) {
+  const attrs = [`alt="${text}"`];
   attrs.push(`src="${href}"`);
   if (title === 'right') {
     attrs.push('class="float-right margin-left-small"');
-  }
-  else if (title === 'center') {
+  } else if (title === 'center') {
     attrs.push('class="text-center"');
-  }
-  else {
+  } else {
     attrs.push('class="float-left margin-right-small"');
     if (title) {
       attrs.push(`title="${title}"`);
