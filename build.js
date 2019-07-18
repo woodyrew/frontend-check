@@ -84,6 +84,7 @@ metalsmith(__dirname)
   )
   .use(
     layouts({
+      pattern: '*.html',
       engine: 'handlebars',
       directory: 'layouts',
       partials: 'layouts/partials',
